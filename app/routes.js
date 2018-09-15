@@ -8,6 +8,13 @@ module.exports = function(app, passport) {
     });
 
     // =====================================
+    // INPUT DATA ==========================
+    // =====================================    
+    app.get('/input-data', function(req, res) {
+        res.render('input-data.ejs', { page: 'input-data'}); 
+    });
+
+    // =====================================
     // LOGIN ===============================
     // =====================================
     app.get('/login', function(req, res) {
